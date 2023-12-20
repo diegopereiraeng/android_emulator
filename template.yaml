@@ -1,0 +1,19 @@
+service:
+  name: <SERVICE>
+  identifier: <SERVICEID>
+  orgIdentifier: SE_Sandbox
+  projectIdentifier: DevOps_Experience
+  serviceDefinition:
+    spec:
+      artifacts:
+        primary:
+          primaryArtifactRef: docker
+          sources:
+            - spec:
+                connectorRef: account.DockerHubDiego
+                imagePath: diegokoala/banking-cv-ff-demo
+                tag: <+input>
+                digest: ""
+              identifier: docker
+              type: DockerRegistry
+    type: Kubernetes
