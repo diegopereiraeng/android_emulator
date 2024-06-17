@@ -1,0 +1,14 @@
+inputSet:
+  name: testinput
+  identifier: testinput
+  orgIdentifier: SE_Sandbox
+  projectIdentifier: storz_pp_sandbox
+  pipeline:
+    identifier: Build_crizstian_ios_harness_demo_1713387396780_Clone
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
